@@ -1,0 +1,350 @@
+.root
+{
+    -fx-background-color: #1E1E1E;
+}
+
+/* custom font */
+@font-face
+{
+    font-family: 'MyCustomFont';
+    src: url('/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* main title */
+.title-label
+{
+    -fx-font-family: 'MyCustomFont';
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+
+.copyright-label
+{
+    -fx-text-fill: gray;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-font-family: 'MyCustomFont';
+}
+
+.content-label
+{
+    -fx-text-fill: white;
+    -fx-font-family: 'MyCustomFont';
+    -fx-font-weight: bold;
+    -fx-font-size: 35px;
+    -fx-padding: 10px;
+}
+
+/* Sidebar Styling */
+.sidebar
+{
+    -fx-background-color: #333333;
+    -fx-background-radius: 10; /* Rounded edges */
+    -fx-padding: 10;
+    -fx-font-family: 'MyCustomFont';
+}
+
+/* logout button Styling */
+.logout-button
+{
+    -fx-background-color: #ff5733;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-border-color: #ff5733;
+    -fx-border-width: 2px;
+    -fx-border-radius: 22px;
+    -fx-padding: 10px 20px;
+    -fx-background-insets: 5; /* Gap between border and button background */
+    -fx-font-family: 'MyCustomFont';
+}
+
+.logout-button:hover
+{
+    -fx-background-color: linear-gradient(to right, #FF7043, #FF8C00);
+}
+
+/* Sidebar buttons Styling */
+.profile-button,
+.addTopics-button,
+.comments-button,
+.classes-button
+{
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 20px;
+    -fx-font-family: 'MyCustomFont';
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 2); /* Soft shadow effect */
+    -fx-content-display: left;  /* Places the image to the left of the text */
+    -fx-alignment: center; /* Aligns text and image to the left */
+}
+
+.profile-button:hover,
+.addTopics-button:hover,
+.comments-button:hover,
+.classes-button:hover
+{
+    -fx-background-color: #565656; /* Gradient similar to profile button */
+}
+
+/* Selected state for sidebar buttons */
+.profile-button.selected,
+.addTopics-button.selected,
+.comments-button.selected,
+.classes-button.selected
+{
+    -fx-background-color: linear-gradient(to right, #FF7043, #FF8C00);
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+}
+
+/* add buttons styling */
+.add-button,
+.addClasses-button
+{
+    -fx-background-color: #32cd32;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 20px;
+    -fx-font-family: 'MyCustomFont';
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+}
+
+/* Styling for send button under comments section */
+.submit-button
+{
+    -fx-background-color: #32cd32;
+    -fx-background-radius: 20px;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+    -fx-padding: 10px 20px;
+    -fx-content-display: graphic-only; /* Only displays the icon */
+    -fx-alignment: center; /* Ensures the icon is centered within the button */
+}
+
+.add-button:hover,
+.addClasses-button:hover,
+.submit-button:hover
+{
+    -fx-background-color: #98FB98;
+}
+
+/* delete buttons styling */
+.delete-button,
+.deleteClasses-button
+{
+    -fx-background-color: #ff0000;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 20px;
+    -fx-font-family: 'MyCustomFont';
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+}
+
+.delete-button:hover,
+.deleteClasses-button:hover
+{
+    -fx-background-color: #FF7F7F;
+}
+
+/* Input Fields Styling */
+.week-input,
+.class-input,
+.topics-learnt,
+.classes-input,
+.comment-input
+{
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #606060;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-text-fill: white;
+    -fx-padding: 12px;
+    -fx-prompt-text-fill: #888888;
+    -fx-font-family: 'MyCustomFont';
+    -fx-font-size: 14px;
+}
+
+/* Tables Styling */
+.table-view,
+.tableClasses-view
+{
+    -fx-background-color: #2A2A2A;
+    -fx-border-color: #444444;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+}
+
+/* Style for table headers */
+.table-view .column-header
+{
+    -fx-background-color: #ff5733;
+    -fx-text-fill: #FF8C00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-font-family: 'MyCustomFont';
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 2);
+}
+
+/* Style for table rows */
+.table-row-cell
+{
+    -fx-background-color: #2A2A2A;
+    -fx-padding: 0;
+}
+
+/* Highlight selected row */
+.table-row-cell:selected
+{
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: white;
+}
+
+/* Style for table cells */
+.table-cell
+{
+    -fx-border-color: #444444;
+    -fx-border-width: 0 1px 1px 0;
+    -fx-padding: 12px;
+    -fx-text-fill: white;
+    -fx-font-family: 'MyCustomFont';
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+/* scrollbar styling */
+.scroll-bar
+{
+    -fx-background-color: transparent; /* Background color of the scrollbar */
+}
+
+.scroll-bar:vertical
+{
+    -fx-pref-width: 12px; /* Width of the vertical scrollbar */
+}
+
+.scroll-bar:horizontal
+{
+    -fx-pref-height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style for the scrollbar track */
+.scroll-bar:vertical .track
+{
+    -fx-background-color: #1E1E1E; /* Track color */
+}
+
+.scroll-bar:horizontal .track
+{
+    -fx-background-color: #1E1E1E; /* Track color */
+}
+
+/* Style for the scrollbar thumb */
+.scroll-bar:vertical .thumb
+{
+    -fx-background-color: #444444; /* Thumb color for vertical scrollbar */
+}
+
+.scroll-bar:horizontal .thumb
+{
+    -fx-background-color: #444444; /* Thumb color for horizontal scrollbar */
+}
+
+/* Style for the scrollbar thumb on hover */
+.scroll-bar:vertical .thumb:hover
+{
+    -fx-background-color: gray; /* Hover color for vertical thumb */
+}
+
+.scroll-bar:horizontal .thumb:hover
+{
+    -fx-background-color: gray; /* Hover color for horizontal thumb */
+}
+
+/* Profile section styling */
+.profile-name
+{
+    -fx-font-size: 30px;
+    -fx-padding: 10px;
+    -fx-text-fill: #FF8C00;
+    -fx-font-weight: bold;
+    -fx-font-family: 'MyCustomFont';
+}
+
+.profile-details
+{
+    -fx-font-size: 25px;
+    -fx-padding: 10px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: 'MyCustomFont';
+}
+
+/* Styling for the comments section */
+.comments-list
+{
+    -fx-background-color: #2A2A2A;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-background-radius: 10px;
+}
+
+/* Styling for each comment cell in the ListView */
+.comments-list .list-cell
+{
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-font-family: 'MyCustomFont';
+}
+
+/* Styling for sent messages (aligns to the right) */
+.sent-message
+{
+    -fx-background-color: blue;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 15px;
+    -fx-text-fill: white;
+    -fx-margin: 5px 50px 5px 5px;
+}
+
+/* Styling for received messages (aligns to the left) */
+.received-message
+{
+    -fx-background-color: #636363;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 15px;
+    -fx-text-fill: white;
+    -fx-margin: 5px 5px 5px 50px;
+}
+
+/* Styling for timestamp in comments */
+.timestamp
+{
+    -fx-font-size: 10px;
+    -fx-text-fill: gray;
+    -fx-padding: 2px 0 0 5px;
+}
+
+/* Styling for username label in comments */
+.username
+{
+    -fx-font-size: 12px;
+    -fx-text-fill: #4CAF50;
+    -fx-padding: 3px 0 0 5px;
+}
