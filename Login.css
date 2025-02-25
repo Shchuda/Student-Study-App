@@ -1,0 +1,101 @@
+.root
+{
+    -fx-background-color: #121212; /* Dark background for the window */
+}
+
+@font-face
+{
+    font-family: 'MyCustomFont';
+    src: url('/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Style for the login frame background */
+.login-frame
+{
+    -fx-background-color: #121212;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+    -fx-background-radius: 10px;
+}
+
+/* Title label styling */
+.title-label
+{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 28px;
+    -fx-font-family: 'MyCustomFont';
+}
+
+.copyright-label
+{
+    -fx-text-fill: gray;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-font-family: 'MyCustomFont';
+}
+
+/* Style for the text fields */
+.studentid-text-field,
+.password-field
+{
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #606060;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-text-fill: white;
+    -fx-padding: 12px;
+    -fx-prompt-text-fill: #888888;
+    -fx-font-family: 'MyCustomFont';
+    -fx-font-size: 14px;
+    -fx-pref-width: 300px;
+    -fx-max-width: 300px;
+}
+
+/* Style for the login button */
+.login-button
+{
+    -fx-background-color: linear-gradient(to right, #FF5733, #FF8C00);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25px;
+    -fx-padding: 10px;
+    -fx-font-family: 'MyCustomFont';
+    -fx-font-size: 16px;
+    -fx-pref-width: 220px;
+}
+
+.login-button:hover
+{
+    -fx-background-color: linear-gradient(to right, #FF7043, #FF8C00);
+}
+
+/* Style for the register button */
+.register-button
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FF8C00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+    -fx-padding: 0;
+    -fx-font-family: 'MyCustomFont';
+}
+
+.register-button:hover
+{
+    -fx-text-fill: #FFA040;
+}
+
+/* Add border to buttons when clicked (focused) */
+.login-button:pressed
+{
+    -fx-border-color: orange;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-padding: 8px 18px;
+    -fx-background-insets: 5;
+}
